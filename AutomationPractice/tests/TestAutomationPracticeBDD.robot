@@ -4,7 +4,7 @@ Library    Selenium
 
 *** Variables ***
 ${URL}        http://automationpractice.com
-${BROWSER}    chrome
+${BROWSER}    firefox
 
 
 *** Test Cases ***
