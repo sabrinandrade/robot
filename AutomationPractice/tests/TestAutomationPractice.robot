@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium
+Library    SeleniumLibrary
 
 
 *** Variables ***
@@ -7,7 +7,7 @@ ${URL}        http://automationpractice.com
 ${BROWSER}    chrome
 
 
-*** Test Cases ***
+*** Test Case ***
 Test Case 01: Search for existing product
     Access website's home page
     Check if website's home page was presented

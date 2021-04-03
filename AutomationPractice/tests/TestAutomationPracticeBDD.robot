@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium
+Library    SeleniumLibrary
 
 
 *** Variables ***
@@ -7,7 +7,7 @@ ${URL}        http://automationpractice.com
 ${BROWSER}    chrome
 
 
-*** Test Cases ***
+*** Test Case ***
 Scenario 01: Search for existing product
     Given that I am on the website's home page
     When I search for the product "Blouse"
