@@ -1,5 +1,6 @@
 *** Settings ***
-Resource        ../resource/Resource.robot
+Documentation   Test cases to test Robot Framework structure using BDD
+Resource        ../resource/Resource.resource
 Test Setup      Open new browser
 Test Teardown   Close current browser
 
@@ -30,4 +31,4 @@ Then the product "${PRODUCT}" should be presented on the result screen
     Check if the product "${PRODUCT}" is presented on the screen
 
 Then an error message "${ERROR_MESSAGE}" should be presented on the result screen
-    Check error message "${ERROR_MESSAGE}"
+    Check message "${ERROR_MESSAGE}"

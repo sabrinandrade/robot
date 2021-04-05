@@ -1,5 +1,6 @@
 *** Settings ***
-Resource        ../resource/Resource.robot
+Documentation   Test cases to test Robot Framework structure
+Resource        ../resource/Resource.resource
 Test Setup      Open browser
 Test Teardown   Close browser
 
@@ -18,7 +19,7 @@ Test Case 02: Search for non-existing product
     Access website's home page
     Type in product's name "nonExistingItem" on the search field
     Click "Search" button
-    Check error message "No results were found for your search "nonExistingItem""
+    Check message "No results were found for your search "nonExistingItem""
 
 
 *** Keywords ***
